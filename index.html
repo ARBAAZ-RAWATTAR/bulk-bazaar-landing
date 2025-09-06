@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BulkBazaar</title>
   <style>
     body {
@@ -11,7 +11,13 @@
       color: #1e88e5;
       text-align: center;
       margin: 0;
-      padding: 50px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 50px 20px 20px;
     }
     h1 {
       font-size: 2.5rem;
@@ -20,6 +26,7 @@
     p {
       font-size: 1.2rem;
       color: #333;
+      margin: 6px 0;
     }
     .badge {
       margin-top: 30px;
@@ -28,16 +35,43 @@
       height: 50px;
       margin: 10px;
     }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      color: #333;
+    }
+    footer a {
+      color: #1e88e5;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h1>🚀 BulkBazaar</h1>
-  <p>India’s B2B Wholesale Marketplace</p>
-  <p>Our mobile app is launching soon on Play Store & App Store!</p>
+  <header>
+    <h1>🚀 BulkBazaar</h1>
+    <p><strong>India’s B2B Wholesale Marketplace</strong></p>
+    <p>Our mobile app is launching soon on Play Store & App Store!</p>
+    <div class="badge">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+    </div>
+  </header>
 
-  <div class="badge">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-  </div>
+  <footer>
+    <p>
+      <a href="/legal/privacy.html">Privacy Policy</a> ·
+      <a href="/legal/terms.html">Terms & Conditions</a> ·
+      <a href="/legal/refund.html">Refund Policy</a> ·
+      <a href="/legal/contact.html">Contact</a>
+    </p>
+    <p>&copy; 2025 BulkBazaar. All rights reserved.</p>
+  </footer>
 </body>
 </html>
